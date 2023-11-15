@@ -3,6 +3,8 @@ Visibility Pathfinder should helps journals to be more visible for Aggregators /
 
 Main idea is described in MIRO Mind Map: https://muni.cz/go/pathfinder-mind-map
 
+Indexes and aggreagors are listed and described in T5.1 spread sheet (created in Goettingen):  https://docs.google.com/spreadsheets/d/1-7GzlovvTBGwAWta-CKb7SmkPT-fZBtGAqX_3E4nR4Y/edit#gid=0
+
 It is set of requirements for different services, where editors of the journals could find if they meet the criteria for different aggreagors or for indexing services to be more "visible" for readers / authors / reviewers and so on.
 
 There is even many of possible recommendation for journals what they should do better or set better inside the system. 
