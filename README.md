@@ -19,5 +19,8 @@ For example:
 - GDPR complient
 - SEO complient
 - Publishing in English (requirement for some aggregators like Scopus)
-- ...
+- Date of first publication
+- Journal Title
+- Journal ISSN for electronic version
+- 
 
