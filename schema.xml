@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE schema SYSTEM "../../../lib/pkp/dtd/xmlSchema.dtd">
+
+<!--
+  * plugins/generic/DISCO/schema.xml
+  *
+  * Copyright (c) 2014-2024 Simon Fraser University
+  * Copyright (c) 2003-2024 John Willinsky
+  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+  *
+  * DiscoPlugin DB XML schema.
+  *
+  -->
+
+<schema version="0.2">
+	<!--
+	  *
+	  * TABLE disco_plugin
+	  *
+	  -->
+	<table name="disco_plugin">
+		<field name="disco_settings_id" type="I8">
+			<KEY/>
+			<AUTOINCREMENT/>
+		</field>
+        <field name="context_id" type="I8">
+			<notnull/>
+		</field>
+		<field name="locale" type="C2" size="14">
+			<NOTNULL/>
+			<DEFAULT VALUE=""/>
+		</field>
+		<field name="setting_name" type="C2" size="255">
+			<NOTNULL/>
+		</field>
+		<field name="setting_value" type="X"/>
+		<field name="setting_type" type="C2" size="6">
+			<NOTNULL/>
+			<descr>(bool|int|float|string|object)</descr>
+		</field>
+		<descr>DISCO plugin settings.</descr>
+		<index name="disco_plugin_settings_journal_id">
+			<col>disco_settings_id</col>
+		</index>
+		<index name="disco_plugin_settings_pkey">
+			<col>disco_settings_id</col>
+            <col>context_id</col>
+			<col>locale</col>
+			<col>setting_name</col>
+			<UNIQUE />
+		</index>
+	</table>	
+</schema>
