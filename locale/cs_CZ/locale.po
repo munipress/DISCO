@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19T11:05:39+00:00\n"
+"PO-Revision-Date: 2020-04-08 11:27+0000\n"
+"Last-Translator: Michal Jelínek <jelinek@synetix.cz>\n"
+"Language-Team: Czech <http://translate.pkp.sfu.ca/projects/ojs/"
+"importexport-doaj/cs/>\n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
+
+msgid "plugins.generic.disco.displayName"
+msgstr "DISCOverability companion Plugin"
+
+msgid "plugins.generic.disco.description"
+msgstr "Check your journal's visibility against criteria of aggregators, indexing databases and search engines."
+
+msgid "plugins.generic.disco.disco"
+msgstr "DISCOverability companion"
+
+msgid "plugins.generic.disco.description.long"
+msgstr "Plugin DISCOverability companion slouží editorům ke kontrole různých kritérií a získání přehledu o jejich časopisu. Do několika částí jsou rozděleny kritéria agregátorů, indexačních databází či vyhledávačů. Některá kritéria jsou hodnocena automaticky, některá si musí editor zkontrolovat sám v jednoduchém checklistu a jiná slouží pouze jako doporučení. Zkontrolujte jestli by Váš časopis nemohl být více viditelný a naučte se jak toho dosáhnout."
+
+msgid "plugins.generic.disco.appearance"
+msgstr "Appearance"
+
+msgid "plugins.generic.disco.information"
+msgstr "Information"
+
+msgid "plugins.generic.disco.metadata"
+msgstr "Metadata"
+
+msgid "plugins.generic.disco.seo"
+msgstr "SEO"
+
+msgid "plugins.generic.disco.statistics"
+msgstr "Statistics"
+
+msgid "plugins.generic.disco.recommendations"
+msgstr "Recommendations"
+
+msgid "plugins.generic.disco.results"
+msgstr "Results"
+
+msgid "plugins.generic.disco.landingPages"
+msgstr "Landing Pages"
+
+msgid "plugins.generic.disco.policy"
+msgstr "Journal policy"
