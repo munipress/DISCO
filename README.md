@@ -1,9 +1,9 @@
-# pathfinder
-Visibility Pathfinder should helps journals to be more visible for Aggregators / Indexing services / Readers / Authors / Reviewers
+# DISCOverability companion
+DISCOverability companion should helps journals to be more visible for Aggregators / Indexing services / Readers / Authors / Reviewers
 
 Main idea is described in MIRO Mind Map: https://muni.cz/go/pathfinder-mind-map
 
-Indexes and aggreagors are listed and described in T5.1 spread sheet (created in Goettingen):  https://docs.google.com/spreadsheets/d/1-7GzlovvTBGwAWta-CKb7SmkPT-fZBtGAqX_3E4nR4Y/edit#gid=0
+Indexes and aggreagors are listed and described in T5.1 Knowledge base: (https://docs.google.com/spreadsheets/d/1qvxsuHq4C0uios9aTi6fK_-vIu_YmhVYJ0W-YOxh1bA)
 
 List of requirements for Checklist: https://muni.cz/go/pathfinder-list
 
