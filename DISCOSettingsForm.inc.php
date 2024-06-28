@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file plugins/generic/DISCO/DISCOSettingsForm.inc.php
+ * @file plugins/generic/disco/DISCOSettingsForm.inc.php
  *
  * Copyright (c) 2014-2024 Simon Fraser University
  * Copyright (c) 2003-2024 John Willinsky
@@ -10,7 +10,7 @@
  * @class DISCOSettingsForm
  * @ingroup plugins_generic_disco
  *
- * @brief Form for journal managers to setup DISCOverability companion plugin
+ * @brief Form for journal managers to setup Discoverability companion plugin
  */
 
 
@@ -24,6 +24,9 @@ class DISCOSettingsForm extends Form {
 	/** @var integer */
 	var $_contextId;
 
+        /** @var $plugin object */
+	public $plugin;
+        
 	/**
 	 * Get the context ID.
 	 * @return integer
@@ -59,43 +62,24 @@ class DISCOSettingsForm extends Form {
 	 * @copydoc Form::initData()
 	 */
 	function initData() {
-		$contextId = $this->_getContextId();
-		$plugin = $this->_getPlugin();
-		foreach($this->getFormFields() as $fieldName => $fieldType) {
-			$this->setData($fieldName, $plugin->getSetting($contextId, $fieldName));
-		}
+		$this->_data = array(
+			'test' => $this->_plugin->getSetting($this->_contextId, 'test')
+		);
 	}
 
 	/**
 	 * @copydoc Form::readInputData()
 	 */
 	function readInputData() {
-		$this->readUserVars(array_keys($this->getFormFields()));
+		$this->readUserVars(array('test'));
 	}
 
 	/**
 	 * @copydoc Form::execute()
 	 */
 	function execute(...$functionArgs) {
-		$plugin = $this->_getPlugin();
-		$contextId = $this->_getContextId();
+                $this->_plugin->updateSetting($this->_contextId, 'test', trim($this->getData('test'), "\"\';"), 'string');
 		parent::execute(...$functionArgs);
-		foreach($this->getFormFields() as $fieldName => $fieldType) {
-			$plugin->updateSetting($contextId, $fieldName, $this->getData($fieldName), $fieldType);
-		}
-	}
-
-
-	//
-	// Public helper methods
-	//
-	/**
-	 * Get form fields
-	 * @return array (field name => field type)
-	 */
-	function getFormFields() {
-		return array(
-		);
 	}
 
 	/**

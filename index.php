@@ -1,11 +1,11 @@
 <?php
 
 /**
- * @defgroup plugins_generic_disco DISCOverability companion Plugin
+ * @defgroup plugins_generic_disco Discoverability companion Plugin
  */
 
 /**
- * @file plugins/generic/DISCO/index.php
+ * @file plugins/generic/disco/index.php
  *
  * Copyright (c) 2014-2024 Simon Fraser University
  * Copyright (c) 2003-2024 John Willinsky

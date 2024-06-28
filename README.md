@@ -1,5 +1,5 @@
-# DISCOverability companion
-DISCOverability companion should helps journals to be more visible for Aggregators / Indexing services / Readers / Authors / Reviewers
+# Discoverability companion
+Discoverability companion should helps journals to be more visible for Aggregators / Indexing services / Readers / Authors / Reviewers
 
 Main idea is described in MIRO Mind Map: https://muni.cz/go/pathfinder-mind-map
 

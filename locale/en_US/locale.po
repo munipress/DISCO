@@ -12,16 +12,16 @@ msgstr ""
 "Language: \n"
 
 msgid "plugins.generic.disco.displayName"
-msgstr "DISCOverability companion Plugin"
+msgstr "Discoverability companion Plugin"
 
 msgid "plugins.generic.disco.description"
-msgstr "Check your journal' visibility against criteria of aggregators, indexing databases and search engines."
+msgstr "Check your journal's visibility against criteria of aggregators, indexing databases and search engines."
 
 msgid "plugins.generic.disco.disco"
-msgstr "DISCOverability companion"
+msgstr "Discoverability companion"
 
 msgid "plugins.generic.disco.description.long"
-msgstr "Plugin DISCOverability companion is used by editors to check various criteria and gain an overview of their journals. The criteria of aggregators, indexing databases, or search engines are divided into several sections. Some criteria are evaluated automatically, some editors must check themselves in a simple checklist, and others serve only as recommendations. Check to see if your journal could be more visible and learn how to achieve that."
+msgstr "Plugin Discoverability companion is used by editors to check various criteria and gain an overview of their journals. The criteria of aggregators, indexing databases, or search engines are divided into several sections. Some criteria are evaluated automatically, some editors must check themselves in a simple checklist, and others serve only as recommendations. Check to see if your journal could be more visible and learn how to achieve that."
 
 msgid "plugins.generic.disco.appearance"
 msgstr "Appearance"

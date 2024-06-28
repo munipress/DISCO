@@ -1,5 +1,5 @@
 {**
- * plugins/generic/DISCO/templates/settingsForm.tpl
+ * plugins/generic/disco/templates/settingsForm.tpl
  *
  * Copyright (c) 2014-2024 Simon Fraser University
  * Copyright (c) 2003-2024 John Willinsky
@@ -8,17 +8,26 @@
  * DISCO plugin settings
  *
  *}
-<script type="text/javascript">
+<script>
 	$(function() {ldelim}
 		// Attach the form handler.
 		$('#discoSettingsForm').pkpHandler('$.pkp.controllers.form.AjaxFormHandler');
 	{rdelim});
 </script>
-<form class="pkp_form" id="discoSettingsForm" method="post" action="{url router=$smarty.const.ROUTE_COMPONENT op="manage" plugin="DISCOPlugin" category="generic" verb="save"}">
+
+<form class="pkp_form" id="discoSettingsForm" method="post" action="{url router=$smarty.const.ROUTE_COMPONENT op="manage" category="generic" plugin=$pluginName verb="settings" save=true}">
 	{csrf}
+	{include file="controllers/notification/inPlaceNotification.tpl" notificationId="discoSettingsFormNotification"}
+
+	<div id="description">{translate key="plugins.generic.disco.manager.settings.test"}</div>
+
 	{fbvFormArea id="discoSettingsFormArea"}
-		{*TODO*}
+            {fbvElement type="text" id="test" value=$test label="plugins.generic.disco.manager.settings.test"}
+                
 	{/fbvFormArea}
-	{fbvFormButtons submitText="common.save"}
+
+	{fbvFormButtons}
+
 	<p><span class="formRequired">{translate key="common.requiredField"}</span></p>
 </form>
+

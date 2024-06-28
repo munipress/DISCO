@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file plugins/generic/DISCO/DISCOPlugin.inc.php
+ * @file plugins/generic/disco/DISCOPlugin.inc.php
  *
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
@@ -9,18 +9,11 @@
  *
  * @class DISCOPlugin
  * @ingroup plugins_generic_disco
- * @brief DISCOverability companion plugin
+ * @brief Discoverability companion plugin
  */
 import('lib.pkp.classes.plugins.GenericPlugin');
 
 class DISCOPlugin extends GenericPlugin {
-
-    /**
-     * @copydoc Plugin::getName()
-     */
-    function getName() {
-        return 'DISCOPlugin';
-    }
 
     /**
      * @copydoc Plugin::getDisplayName()
@@ -44,25 +37,20 @@ class DISCOPlugin extends GenericPlugin {
             return false;
         
         if ($this->getEnabled()) {
-//				// Register the Visibility Checker DAO.
+            
+//				// Register the Discoverability companion DAO.
 //				import('plugins.generic.disco.classes.discoDAO');
 //				$discoDao = new discoDAO();
 //				DAORegistry::registerDAO('discoDAO', $discoDao);
 
             HookRegistry::register('Template::Settings::website', array($this, 'callbackShowWebsiteSettingsTabs'));
 
-            // Intercept the LoadHandler hook to present
-            // static pages when requested.
-//				HookRegistry::register('LoadHandler', array($this, 'callbackHandleContent'));
-            // Register the components this plugin implements to
-            // permit administration of static pages.
-//				HookRegistry::register('LoadComponentHandler', array($this, 'setupGridHandler'));
         }
         return true;
     }
 
     /**
-     * Extend the website settings tabs to include static pages
+     * Extend the website settings tabs to include Discoverability companion plugin
      * @param $hookName string The name of the invoked hook
      * @param $args array Hook parameters
      * @return boolean Hook handling status
@@ -70,8 +58,7 @@ class DISCOPlugin extends GenericPlugin {
     function callbackShowWebsiteSettingsTabs($hookName, $args) {
         $templateMgr = $args[1];
         $output = & $args[2];
-        
-        $output .= $templateMgr->fetch($this->getTemplateResource('discoTab.tpl'));
+        $output .= $templateMgr->fetch($this->getTemplateResource('discoPluginTab.tpl'));
         
         // Permit other plugins to continue interacting with this hook
         return false;
@@ -99,4 +86,32 @@ class DISCOPlugin extends GenericPlugin {
         );
     }
 
+    /**
+     * @copydoc Plugin::manage()
+     */
+    function manage($args, $request) {
+        switch ($request->getUserVar('verb')) {
+            case 'settings':
+                $context = $request->getContext();
+
+                AppLocale::requireComponents(LOCALE_COMPONENT_APP_COMMON, LOCALE_COMPONENT_PKP_MANAGER);
+                $templateMgr = TemplateManager::getManager($request);
+                $templateMgr->registerPlugin('function', 'plugin_url', array($this, 'smartyPluginUrl'));
+
+                $this->import('DISCOSettingsForm');
+                $form = new DISCOSettingsForm($this, $context->getId());
+
+                if ($request->getUserVar('save')) {
+                    $form->readInputData();
+                    if ($form->validate()) {
+                        $form->execute();
+                        return new JSONMessage(true);
+                    }
+                } else {
+                    $form->initData();
+                }
+                return new JSONMessage(true, $form->fetch($request));
+        }
+        return parent::manage($args, $request);
+    }
 }

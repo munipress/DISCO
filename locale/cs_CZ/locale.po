@@ -15,16 +15,16 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 
 msgid "plugins.generic.disco.displayName"
-msgstr "DISCOverability companion Plugin"
+msgstr "Discoverability companion Plugin"
 
 msgid "plugins.generic.disco.description"
 msgstr "Check your journal's visibility against criteria of aggregators, indexing databases and search engines."
 
 msgid "plugins.generic.disco.disco"
-msgstr "DISCOverability companion"
+msgstr "Discoverability companion"
 
 msgid "plugins.generic.disco.description.long"
-msgstr "Plugin DISCOverability companion slouží editorům ke kontrole různých kritérií a získání přehledu o jejich časopisu. Do několika částí jsou rozděleny kritéria agregátorů, indexačních databází či vyhledávačů. Některá kritéria jsou hodnocena automaticky, některá si musí editor zkontrolovat sám v jednoduchém checklistu a jiná slouží pouze jako doporučení. Zkontrolujte jestli by Váš časopis nemohl být více viditelný a naučte se jak toho dosáhnout."
+msgstr "Plugin Discoverability companion slouží editorům ke kontrole různých kritérií a získání přehledu o jejich časopisu. Do několika částí jsou rozděleny kritéria agregátorů, indexačních databází či vyhledávačů. Některá kritéria jsou hodnocena automaticky, některá si musí editor zkontrolovat sám v jednoduchém checklistu a jiná slouží pouze jako doporučení. Zkontrolujte jestli by Váš časopis nemohl být více viditelný a naučte se jak toho dosáhnout."
 
 msgid "plugins.generic.disco.appearance"
 msgstr "Appearance"
