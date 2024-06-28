@@ -1,11 +1,11 @@
 # Discoverability companion
 Discoverability companion should helps journals to be more visible for Aggregators / Indexing services / Readers / Authors / Reviewers
 
-Main idea is described in MIRO Mind Map: https://muni.cz/go/pathfinder-mind-map
+Plugin model is described in MIRO Mind Map: **https://muni.cz/go/pathfinder-mind-map**
 
 Indexes and aggreagors are listed and described in T5.1 Knowledge base: (https://docs.google.com/spreadsheets/d/1qvxsuHq4C0uios9aTi6fK_-vIu_YmhVYJ0W-YOxh1bA)
 
-List of requirements for Checklist: https://muni.cz/go/pathfinder-list
+Categorized requirements for plugin: **https://muni.cz/go/disco-requirements**
 
 It is set of requirements for different services, where editors of the journals could find if they meet the criteria for different aggreagors or for indexing services to be more "visible" for readers / authors / reviewers and so on.
 
