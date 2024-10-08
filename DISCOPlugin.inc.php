@@ -1,19 +1,27 @@
 <?php
 
 /**
- * @file plugins/generic/disco/DISCOPlugin.inc.php
+ * @file plugins/generic/disco/DiscoPlugin.inc.php
  *
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
- * @class DISCOPlugin
+ * @class DiscoPlugin
  * @ingroup plugins_generic_disco
+ *
  * @brief Discoverability companion plugin
  */
 import('lib.pkp.classes.plugins.GenericPlugin');
 
-class DISCOPlugin extends GenericPlugin {
+class DiscoPlugin extends GenericPlugin {
+
+    /**
+     * @copydoc Plugin::getName()
+     */
+    function getName() {
+        return 'DiscoPlugin';
+    }
 
     /**
      * @copydoc Plugin::getDisplayName()
@@ -37,20 +45,14 @@ class DISCOPlugin extends GenericPlugin {
             return false;
         
         if ($this->getEnabled()) {
-            
-//				// Register the Discoverability companion DAO.
-//				import('plugins.generic.disco.classes.discoDAO');
-//				$discoDao = new discoDAO();
-//				DAORegistry::registerDAO('discoDAO', $discoDao);
-
-            HookRegistry::register('Template::Settings::website', array($this, 'callbackShowWebsiteSettingsTabs'));
-
+            HookRegistry::register('Template::Settings::website', array($this, 'callbackShowWebsiteSettingsTabs'));            
+            HookRegistry::register('TemplateManager::display',array($this, 'addDiscoStyles'));
         }
         return true;
     }
 
     /**
-     * Extend the website settings tabs to include Discoverability companion plugin
+     * Extend the website settings tabs to include static pages
      * @param $hookName string The name of the invoked hook
      * @param $args array Hook parameters
      * @return boolean Hook handling status
@@ -58,12 +60,40 @@ class DISCOPlugin extends GenericPlugin {
     function callbackShowWebsiteSettingsTabs($hookName, $args) {
         $templateMgr = $args[1];
         $output = & $args[2];
-        $output .= $templateMgr->fetch($this->getTemplateResource('discoPluginTab.tpl'));
+        $templateMgr->assign("discoAppearance",$this->getTemplateResource('discoAppearance.tpl'));
+        $templateMgr->assign("discoDiamond",$this->getTemplateResource('discoDiamond.tpl'));
+        $templateMgr->assign("discoGeneralRecommendation",$this->getTemplateResource('discoGeneralRecommendation.tpl'));
+        $templateMgr->assign("discoImpactRecommendation",$this->getTemplateResource('discoImpactRecommendation.tpl'));
+        $templateMgr->assign("discoInformation",$this->getTemplateResource('discoInformation.tpl'));
+        $templateMgr->assign("discoLandingPages",$this->getTemplateResource('discoLandingPages.tpl'));
+        $templateMgr->assign("discoMetadata",$this->getTemplateResource('discoMetadata.tpl'));
+        $templateMgr->assign("discoMetadataQuality",$this->getTemplateResource('discoMetadataQuality.tpl'));
+        $templateMgr->assign("discoRegularity",$this->getTemplateResource('discoRegularity.tpl'));
+        $templateMgr->assign("discoResults",$this->getTemplateResource('discoResults.tpl'));
+        $templateMgr->assign("discoPolicy",$this->getTemplateResource('discoPolicy.tpl'));
+        $templateMgr->assign("discoSeo",$this->getTemplateResource('discoSeo.tpl'));
+        $output .= $templateMgr->fetch($this->getTemplateResource('discoTab.tpl'));
         
         // Permit other plugins to continue interacting with this hook
         return false;
     }
 
+    /**
+	 * 
+	 */
+	function addDiscoStyles($hookName, $params) {
+		$templateMgr = $params[0];
+		$request = $this->getRequest();
+                $discoStyles = $this->getStyleSheetURL($request, false) . DIRECTORY_SEPARATOR . 'disco.less';
+
+		$templateMgr->addStylesheet(
+			'DiscoStyles',
+                        $discoStyles,
+			array('contexts' => 'backend')
+		);
+		return false;
+	}
+//        
     /**
      * @copydoc Plugin::getActions()
      */
@@ -85,33 +115,19 @@ class DISCOPlugin extends GenericPlugin {
                 parent::getActions($request, $verb)
         );
     }
-
+    
     /**
-     * @copydoc Plugin::manage()
+     * Get the JavaScript URL for this plugin.
      */
-    function manage($args, $request) {
-        switch ($request->getUserVar('verb')) {
-            case 'settings':
-                $context = $request->getContext();
-
-                AppLocale::requireComponents(LOCALE_COMPONENT_APP_COMMON, LOCALE_COMPONENT_PKP_MANAGER);
-                $templateMgr = TemplateManager::getManager($request);
-                $templateMgr->registerPlugin('function', 'plugin_url', array($this, 'smartyPluginUrl'));
-
-                $this->import('DISCOSettingsForm');
-                $form = new DISCOSettingsForm($this, $context->getId());
-
-                if ($request->getUserVar('save')) {
-                    $form->readInputData();
-                    if ($form->validate()) {
-                        $form->execute();
-                        return new JSONMessage(true);
-                    }
-                } else {
-                    $form->initData();
-                }
-                return new JSONMessage(true, $form->fetch($request));
-        }
-        return parent::manage($args, $request);
+    function getJavaScriptURL() {
+            return Application::get()->getRequest()->getBaseUrl() . DIRECTORY_SEPARATOR . $this->getPluginPath() . DIRECTORY_SEPARATOR . 'js';
     }
+    
+    /**
+     * Get the StyleSheet URL for this plugin.
+     */
+    function getStyleSheetURL() {
+            return Application::get()->getRequest()->getBaseUrl() . DIRECTORY_SEPARATOR . $this->getPluginPath() . DIRECTORY_SEPARATOR . 'styles';
+    }
+
 }

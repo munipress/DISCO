@@ -26,29 +26,995 @@ msgstr "Discoverability companion"
 msgid "plugins.generic.disco.description.long"
 msgstr "Plugin Discoverability companion slouží editorům ke kontrole různých kritérií a získání přehledu o jejich časopisu. Do několika částí jsou rozděleny kritéria agregátorů, indexačních databází či vyhledávačů. Některá kritéria jsou hodnocena automaticky, některá si musí editor zkontrolovat sám v jednoduchém checklistu a jiná slouží pouze jako doporučení. Zkontrolujte jestli by Váš časopis nemohl být více viditelný a naučte se jak toho dosáhnout."
 
+msgid "plugins.generic.disco.diamond"
+msgstr "Diamond criteria"
+
 msgid "plugins.generic.disco.appearance"
 msgstr "Appearance"
 
 msgid "plugins.generic.disco.information"
-msgstr "Information"
+msgstr "Journal Description"
 
-msgid "plugins.generic.disco.metadata"
-msgstr "Metadata"
+msgid "plugins.generic.disco.metadataRecommendation"
+msgstr "Metadata Recommendations"
+
+msgid "plugins.generic.disco.metadataQuality"
+msgstr "Metadata Quality"
 
 msgid "plugins.generic.disco.seo"
 msgstr "SEO"
 
-msgid "plugins.generic.disco.statistics"
-msgstr "Statistics"
+msgid "plugins.generic.disco.regularity"
+msgstr "Regularity"
 
-msgid "plugins.generic.disco.recommendations"
-msgstr "Recommendations"
+msgid "plugins.generic.disco.generalRecommendations"
+msgstr "General Recommendations"
+
+msgid "plugins.generic.disco.impactRecommendations"
+msgstr "Impact Recommendations"
 
 msgid "plugins.generic.disco.results"
 msgstr "Results"
 
 msgid "plugins.generic.disco.landingPages"
-msgstr "Landing Pages"
+msgstr "Landing Pages / Galleys"
 
 msgid "plugins.generic.disco.policy"
 msgstr "Journal policy"
+
+msgid "plugins.generic.disco.appearance.fullContentAvailable"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.fullContentAvailable.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.fullContentAvailable.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.functionalWebsite"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.functionalWebsite.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.functionalWebsite.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.journalUrl"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.journalUrl.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.journalUrl.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.ojsCheck.eIssn"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.ojsCheck.eIssn.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.ojsCheck.eIssn.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.ojsCheck.fullContentAvailable"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.ojsCheck.fullContentAvailable.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.ojsCheck.fullContentAvailable.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.ojsCheck.journalTitle"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.ojsCheck.journalTitle.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.ojsCheck.journalTitle.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.ojsCheck.metaInformationFilled"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.ojsCheck.metaInformationFilled.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.ojsCheck.metaInformationFilled.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.qualityEnHomepage"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.qualityEnHomepage.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.appearance.qualityEnHomepage.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.doasScore"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.doasScore.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.doasScore.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.noCharges"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.noCharges.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.noCharges.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.openAuthorship"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.openAuthorship.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.openAuthorship.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.openLicence"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.openLicence.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.openLicence.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.ownershipScience"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.ownershipScience.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.ownershipScience.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.peerReview"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.peerReview.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.diamond.peerReview.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.accesibility"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.accesibility.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.accesibility.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.clarityOfLanguage"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.clarityOfLanguage.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.clarityOfLanguage.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.communityStandardsAdherence"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.communityStandardsAdherence.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.communityStandardsAdherence.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.grantSupportDetails"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.grantSupportDetails.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.grantSupportDetails.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.internalSystemInUse"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.internalSystemInUse.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.internalSystemInUse.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.plagiarismCheck"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.plagiarismCheck.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.plagiarismCheck.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.timeliness"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.timeliness.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.generalRecommendations.timeliness.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.authorsDiversity"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.authorsDiversity.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.authorsDiversity.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.citedAuthors"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.citedAuthors.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.citedAuthors.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.citedEditorialBoard"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.citedEditorialBoard.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.citedEditorialBoard.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.citedness"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.citedness.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.citedness.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.contentSignificance"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.contentSignificance.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.contentSignificance.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.editorsDiversity"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.editorsDiversity.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.impactRecommendations.editorsDiversity.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.aimsAndScopeDescribed"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.aimsAndScopeDescribed.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.aimsAndScopeDescribed.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.authorGuidelinesDescribed"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.authorGuidelinesDescribed.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.authorGuidelinesDescribed.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.bibliographicInformation"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.bibliographicInformation.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.bibliographicInformation.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.editorialBoardPage"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.editorialBoardPage.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.editorialBoardPage.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.ojsCheck.contactDetailsAvailable"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.ojsCheck.contactDetailsAvailable.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.ojsCheck.contactDetailsAvailable.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.ojsCheck.editorialBoardPage"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.ojsCheck.editorialBoardPage.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.ojsCheck.editorialBoardPage.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.ojsCheck.journalPublisherNameAvailable"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.ojsCheck.journalPublisherNameAvailable.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.ojsCheck.journalPublisherNameAvailable.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.peerReviewDescribed"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.peerReviewDescribed.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.peerReviewDescribed.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.publicationEthicsDescribed"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.publicationEthicsDescribed.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.publicationEthicsDescribed.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.scholarlyArticles"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.scholarlyArticles.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalDecription.scholarlyArticles.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.noAPC"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.noAPC.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.noAPC.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.noRegistrationNeed"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.noRegistrationNeed.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.noRegistrationNeed.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.oaPolicyDescribed"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.oaPolicyDescribed.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.oaPolicyDescribed.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.ojsCheck.copyrightTerms"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.ojsCheck.copyrightTerms.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.ojsCheck.copyrightTerms.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.ojsCheck.licensingTerms"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.ojsCheck.licensingTerms.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.ojsCheck.licensingTerms.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.ojsCheck.noEmbargoPeriod"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.ojsCheck.noEmbargoPeriod.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.journalPolicy.ojsCheck.noEmbargoPeriod.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.dataInJats"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.dataInJats.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.dataInJats.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.doi"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.doi.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.doi.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.linkToFulltext"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.linkToFulltext.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.linkToFulltext.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.references"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.references.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.references.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.title"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.title.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.title.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.uniqueUrlArticles"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.uniqueUrlArticles.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.uniqueUrlArticles.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.uniqueUrlGalleys"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.uniqueUrlGalleys.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.lpGalleys.uniqueUrlGalleys.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.accessRights"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.accessRights.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.accessRights.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.alternateIdentifier"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.alternateIdentifier.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.alternateIdentifier.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.articleEndPage"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.articleEndPage.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.articleEndPage.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.articleStartPage"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.articleStartPage.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.articleStartPage.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.audience"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.audience.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.audience.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.authors"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.authors.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.authors.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.contributors"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.contributors.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.contributors.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.coverage"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.coverage.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.coverage.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.description.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.description.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.embargoPeriodDate"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.embargoPeriodDate.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.embargoPeriodDate.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.fileLocation"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.fileLocation.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.fileLocation.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.format"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.format.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.format.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.fundingReferences"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.fundingReferences.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.fundingReferences.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.geoLocation"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.geoLocation.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.geoLocation.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.issueNumber"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.issueNumber.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.issueNumber.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.issueVolume"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.issueVolume.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.issueVolume.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.journalTitle"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.journalTitle.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.journalTitle.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.language"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.language.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.language.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.licenseCondition"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.licenseCondition.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.licenseCondition.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.publicationDate"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.publicationDate.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.publicationDate.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.publisher"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.publisher.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.publisher.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.relatedIdentifier"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.relatedIdentifier.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.relatedIdentifier.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.resourceIdentifier"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.resourceIdentifier.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.resourceIdentifier.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.resourceType"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.resourceType.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.resourceType.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.resourceVersion"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.resourceVersion.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.resourceVersion.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.size"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.size.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.size.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.source"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.source.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.source.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.subject"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.subject.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.subject.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.title"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.title.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.title.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataQuality.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.metadataFormatOpenAIRE"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.metadataFormatOpenAIRE.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.metadataFormatOpenAIRE.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.authorsAffiliations"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.authorsAffiliations.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.authorsAffiliations.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.machineReadableMetadataFormat"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.machineReadableMetadataFormat.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.machineReadableMetadataFormat.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.metadataInDCFormat"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.metadataInDCFormat.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.metadataInDCFormat.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.oaiPMHEnabled"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.oaiPMHEnabled.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.oaiPMHEnabled.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.systemLanguageCheck"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.systemLanguageCheck.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.systemLanguageCheck.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.usingDOIs"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.usingDOIs.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.ojsCheck.usingDOIs.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.titlesAbstractsInEnglish"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.titlesAbstractsInEnglish.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.metadataRecommendations.titlesAbstractsInEnglish.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.regularity.articlesCount"
+msgstr "" 
+
+msgid "plugins.generic.disco.regularity.articlesCount.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.regularity.articlesCount.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.regularity.periodicitydescription"
+msgstr "" 
+
+msgid "plugins.generic.disco.regularity.periodicityservices"
+msgstr "" 
+
+msgid "plugins.generic.disco.regularity.periodicity"
+msgstr "" 
+
+msgid "plugins.generic.disco.regularity.publishingHistory"
+msgstr "" 
+
+msgid "plugins.generic.disco.regularity.publishingHistory.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.regularity.publishingHistory.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.accurateTitles"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.accurateTitles.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.accurateTitles.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.altTextImages"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.altTextImages.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.altTextImages.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.articlesInHtml"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.articlesInHtml.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.articlesInHtml.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.covers"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.covers.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.covers.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.crosslinks"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.crosslinks.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.crosslinks.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.h"
+Title"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.h"
+Title.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.h"
+Title.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.keyTerms"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.keyTerms.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.keyTerms.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.noTextInImages"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.noTextInImages.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.noTextInImages.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.pageLoadingTime"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.pageLoadingTime.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.pageLoadingTime.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.readableURLs"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.readableURLs.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.readableURLs.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.robotsFile"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.robotsFile.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.robotsFile.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.robotsMetadata"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.robotsMetadata.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.robotsMetadata.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.seoCompliant"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.seoCompliant.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.seoCompliant.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.sitemapAvailable"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.sitemapAvailable.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.sitemapAvailable.services"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.submitSitemapdescription"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.submitSitemapservices"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.submitSitemap"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.unhideJScontent"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.unhideJScontent.description"
+msgstr "" 
+
+msgid "plugins.generic.disco.seo.unhideJScontent.services"
+msgstr "" 

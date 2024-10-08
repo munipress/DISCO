@@ -1,22 +1,22 @@
 <?php
 
 /**
- * @file plugins/generic/disco/DISCOSettingsForm.inc.php
+ * @file plugins/importexport/doaj/classes/form/DOAJSettingsForm.inc.php
  *
- * Copyright (c) 2014-2024 Simon Fraser University
- * Copyright (c) 2003-2024 John Willinsky
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
- * @class DISCOSettingsForm
- * @ingroup plugins_generic_disco
+ * @class DOAJSettingsForm
+ * @ingroup plugins_importexport_doaj
  *
- * @brief Form for journal managers to setup Discoverability companion plugin
+ * @brief Form for journal managers to setup DOAJ plugin
  */
 
 
 import('lib.pkp.classes.form.Form');
 
-class DISCOSettingsForm extends Form {
+class DOAJSettingsForm extends Form {
 
 	//
 	// Private properties
@@ -24,9 +24,6 @@ class DISCOSettingsForm extends Form {
 	/** @var integer */
 	var $_contextId;
 
-        /** @var $plugin object */
-	public $plugin;
-        
 	/**
 	 * Get the context ID.
 	 * @return integer
@@ -35,12 +32,24 @@ class DISCOSettingsForm extends Form {
 		return $this->_contextId;
 	}
 
+	/** @var CrossRefExportPlugin */
+	var $_plugin;
+
+	/**
+	 * Get the plugin.
+	 * @return CrossRefExportPlugin
+	 */
+	function _getPlugin() {
+		return $this->_plugin;
+	}
+
+
 	//
 	// Constructor
 	//
 	/**
 	 * Constructor
-	 * @param $plugin DiscoPlugin
+	 * @param $plugin DOAJExportPlugin
 	 * @param $contextId integer
 	 */
 	function __construct($plugin, $contextId) {
@@ -62,24 +71,46 @@ class DISCOSettingsForm extends Form {
 	 * @copydoc Form::initData()
 	 */
 	function initData() {
-		$this->_data = array(
-			'test' => $this->_plugin->getSetting($this->_contextId, 'test')
-		);
+		$contextId = $this->_getContextId();
+		$plugin = $this->_getPlugin();
+		foreach($this->getFormFields() as $fieldName => $fieldType) {
+			$this->setData($fieldName, $plugin->getSetting($contextId, $fieldName));
+		}
 	}
 
 	/**
 	 * @copydoc Form::readInputData()
 	 */
 	function readInputData() {
-		$this->readUserVars(array('test'));
+		$this->readUserVars(array_keys($this->getFormFields()));
 	}
 
 	/**
 	 * @copydoc Form::execute()
 	 */
 	function execute(...$functionArgs) {
-                $this->_plugin->updateSetting($this->_contextId, 'test', trim($this->getData('test'), "\"\';"), 'string');
+		$plugin = $this->_getPlugin();
+		$contextId = $this->_getContextId();
 		parent::execute(...$functionArgs);
+		foreach($this->getFormFields() as $fieldName => $fieldType) {
+			$plugin->updateSetting($contextId, $fieldName, $this->getData($fieldName), $fieldType);
+		}
+	}
+
+
+	//
+	// Public helper methods
+	//
+	/**
+	 * Get form fields
+	 * @return array (field name => field type)
+	 */
+	function getFormFields() {
+		return array(
+			'apiKey' => 'string',
+			'automaticRegistration' => 'bool',
+			'testMode' => 'bool'
+		);
 	}
 
 	/**
@@ -88,7 +119,7 @@ class DISCOSettingsForm extends Form {
 	 * @return boolean
 	 */
 	function isOptional($settingName) {
-		return in_array($settingName, array());
+		return in_array($settingName, array('apiKey', 'automaticRegistration', 'testMode'));
 	}
 
 }

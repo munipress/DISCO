@@ -11,9 +11,10 @@
   * Plugin version information.
   -->
 <version>
-	<application>discoPlugin</application>
+	<application>disco</application>
 	<type>plugins.generic</type>
 	<release>1.1.0.0</release>
 	<date>2024-06-26</date>
     <lazy-load>1</lazy-load>
+    <class>DiscoPlugin</class>
 </version>
