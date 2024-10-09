@@ -11,7 +11,6 @@
     <h3>{translate key="plugins.generic.disco.policy"}</h3>
     <p>{translate key="plugins.generic.disco.policy.description"}</p>
     {fbvFormSection class="formButtons"}
-            {fbvElement type="button" class="pkp_helpers_align_left" id="previewButton" label="common.preview"}
             {assign var=buttonId value="submitFormButton"|concat:"-"|uniqid}
             {fbvElement type="submit" class="submitFormButton" id=$buttonId label="common.save"}
     {/fbvFormSection}

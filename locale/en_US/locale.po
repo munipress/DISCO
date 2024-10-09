@@ -63,58 +63,62 @@ msgid "plugins.generic.disco.policy"
 msgstr "Journal policy"
 
 msgid "plugins.generic.disco.appearance.fullContentAvailable"
-msgstr "" 
+msgstr "Full journal content available online" 
 
 msgid "plugins.generic.disco.appearance.fullContentAvailable.description"
-msgstr "" 
+msgstr "Full access to the published content with all necessary permissions to view that content. " 
 
 msgid "plugins.generic.disco.appearance.fullContentAvailable.services"
-msgstr "" 
+msgstr "Web of Science (ESCI), Scopus" 
 
 msgid "plugins.generic.disco.appearance.functionalWebsite"
-msgstr "" 
+msgstr "Functional website" 
 
 msgid "plugins.generic.disco.appearance.functionalWebsite.description"
-msgstr "" 
+msgstr "Website information must be accurate, the information architecture and navigation system must ensure easy access to the published content and all other features defining the journal (such as Editorial Board, instructions to authors, peer review, access model, and so on). The journal website must clearly link to the publisher website and vice versa." 
 
 msgid "plugins.generic.disco.appearance.functionalWebsite.services"
-msgstr "" 
+msgstr "Web of Science (ESCI)" 
 
 msgid "plugins.generic.disco.appearance.journalUrl"
-msgstr "" 
+msgstr "Journal URL" 
 
 msgid "plugins.generic.disco.appearance.journalUrl.description"
-msgstr "" 
+msgstr "<p>Where both online and print editions are available, it is mandatory to provide the journal URL and full-text access details of current content.</p>
+<p>The journal must have its own dedicated URL and homepage that is accessible from any location.</p>
+" 
 
 msgid "plugins.generic.disco.appearance.journalUrl.services"
-msgstr "" 
+msgstr "Web of Science (ESCI), DOAJ, PubMed" 
 
 msgid "plugins.generic.disco.appearance.ojsCheck.eIssn"
-msgstr "" 
+msgstr "eISSN" 
 
 msgid "plugins.generic.disco.appearance.ojsCheck.eIssn.description"
-msgstr "" 
+msgstr "<p>The journal must have a registered ISSN that is verifiable on the ISSN database (https://portal.issn.org/) and is clearly and consistently displayed on all journal platforms (electronic and/or print). If both print and electronic ISSNs are present both should be provided.</p>
+<p>ERIH PLUS requires a valid ISSN code, confirmed by the International ISSN Portal. Be advised that journals with ISSN codes listed as “assigned to a publication but not yet confirmed” or “free ISSN” will not be processed.</p>
+" 
 
 msgid "plugins.generic.disco.appearance.ojsCheck.eIssn.services"
-msgstr "" 
+msgstr "Web of Science (ESCI), Scopus, DOAJ, ERIH Plus, REDALYC, DDH" 
 
 msgid "plugins.generic.disco.appearance.ojsCheck.fullContentAvailable"
-msgstr "" 
+msgstr "Full journal published content available (is journal available?) - OA" 
 
 msgid "plugins.generic.disco.appearance.ojsCheck.fullContentAvailable.description"
-msgstr "" 
+msgstr "Is your journal Open Access and fully available online for free without any kind of registration" 
 
 msgid "plugins.generic.disco.appearance.ojsCheck.fullContentAvailable.services"
-msgstr "" 
+msgstr "DOAJ" 
 
 msgid "plugins.generic.disco.appearance.ojsCheck.journalTitle"
-msgstr "" 
+msgstr "Journal Title" 
 
 msgid "plugins.generic.disco.appearance.ojsCheck.journalTitle.description"
-msgstr "" 
+msgstr "The journal must have a distinct title that is aligned with the registered ISSN, the journal’s stated scope, published content, and community demographic (editorial board and authors). The title should be consistently displayed at the article, issue (if present), journal, and website level." 
 
 msgid "plugins.generic.disco.appearance.ojsCheck.journalTitle.services"
-msgstr "" 
+msgstr "Web of Science (ESCI), REDALYC" 
 
 msgid "plugins.generic.disco.appearance.ojsCheck.metaInformationFilled"
 msgstr "" 
@@ -126,13 +130,13 @@ msgid "plugins.generic.disco.appearance.ojsCheck.metaInformationFilled.services"
 msgstr "" 
 
 msgid "plugins.generic.disco.appearance.qualityEnHomepage"
-msgstr "" 
+msgstr "Quality homepage in English" 
 
 msgid "plugins.generic.disco.appearance.qualityEnHomepage.description"
-msgstr "" 
+msgstr "Quality english language journal home page available" 
 
 msgid "plugins.generic.disco.appearance.qualityEnHomepage.services"
-msgstr "" 
+msgstr "Scopus" 
 
 msgid "plugins.generic.disco.diamond.doasScore"
 msgstr "" 
